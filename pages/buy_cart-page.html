@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../assets/stylesheet/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#" class="logo">Ara_shop</a>
+      
+    <div>
+        <ul id="navbar">
+            
+            <li><a  href="../index.html" class="active">Home</a></li>
+            <li><a href="./product_page.html">Shop</a></li>
+            <li><a href="./Log-in_page.html">Sign-in</a></li>
+            <li id="bag"><a href="./buy_cart-page.html"><i class="fas fa-shopping-cart"></i></a></li>
+            <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+    
+    <a href="../pages/buy_cart-page.html"><i class="fas fa-shopping-cart"></i></a>
+    <i id="bar" class="fas fa-outdent"></i>
+    </div>
+     </section>
+
+    <section id="cart1" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>REMOVE</td>
+                    <td>IMAGE</td>
+                    <td>PRODUCT</td>
+                    <td>PRICE</td>
+                    <td>QUANTITY</td>
+                    <td>SUBTOTAL</td>
+                </tr>
+            </thead>
+           <tbody>
+            <tr>
+                <td>
+                    <a href="#"><i class="fas fa-times-circle"></i></a>
+                </td>
+                <td>
+                    <img src="../assets/image/BABY BOTTLE _59 PESOS.png" alt="">
+                </td>
+                <td>BABY BOTTLE</td>
+                <td>59php</td>
+                <td><input type="number" value="1"></td>
+                <td>59php</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#"><i class="fas fa-times-circle"></i></a>
+                </td>
+                <td>
+                    <img src="../assets/image/BABY BURP CLOTH_50 PESOS.png" alt="">
+                </td>
+                <td>BABY BURPCLOTH</td>
+                <td>50php</td>
+                <td><input type="number" value="1"></td>
+                <td>50php</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#"><i class="fas fa-times-circle"></i></a>
+                </td>
+                <td>
+                    <img src="../assets/image/LISTERINE MOUTHWASH _65 PESOS.png" alt="">
+                </td>
+                <td>MOUTHWASH</td>
+                <td>65php</td>
+                <td><input type="number" value="1"></td>
+                <td>65php</td>
+            </tr>
+           </tbody>
+        </table>
+         
+    </section>
+    <section id="cart-add" class="section-p1">
+     <div  id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal">Apply</button>
+        </div>
+     </div>
+     <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+            <tr>
+                <td>
+                    Cart Subtotal
+                </td>
+                <td>
+                    174php
+                </td>
+
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>FREE</td>
+            </tr>
+            <tr>
+                
+                <td><strong>Total</strong></td>
+                <td>174php</td>
+            </tr>
+        </table>
+            <button class="normal">Proceed to Checkout </button>
+     </div>
+    </section>
+
+    <script src="../assets/script/script.js"></script>
+
+</body>
+</html>

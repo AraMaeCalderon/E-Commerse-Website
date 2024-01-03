@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,200;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    font-family: sans-serif,"Poppins";
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+body,input,button{
+font-size: 1rem;
+font-family: "Poppins",sans-serif;
+}
+body{
+    width: 100%;
+    color:saddlebrown;
+}
+input,button{
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration:none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    transition: 0.3s ease;
+    
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.login{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.login__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.login__form{
+    position: relative;
+    background-color: black;
+    border: 2px solid white;
+    margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+}
+.login__title{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.login__content,
+.login__box{
+    display: grid;
+}
+.login__content{
+    row-gap: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+.login__box{
+ grid-template-columns: max-content 1fr;
+ column-gap: .75rem;
+ align-items: center;
+ border-bottom: 2px solid white;
+}
+
+.login__icon,
+.login__eye{
+   font-size: 1.25rem;
+}
+
+.login__input{
+    width: 100%;
+    padding-block: .8rem;
+    background: none;
+    color: aliceblue;
+    position: relative;
+    z-index: 1;
+}
+
+.login__box-input{
+    position: relative;
+
+}
+.login__label{
+    position: absolute;
+    left: 0;
+    top: 13px;
+    font-weight: 500;
+    transition: top .3s, font-size .3s;
+}
+
+.login__eye{
+    position: absolute;
+    right: 0;
+    top: 18px;
+    z-index: 10;
+    cursor: pointer;
+}
+.login__box:nth-child(2) input{
+    padding-right: 1.8rem;
+}
+
+.login__check,
+.login__check-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.login__check{
+    margin-bottom: 1.5rem;
+}
+.login__check-label,
+.login__forgot,
+.login__register{
+    font-size: .813rem;
+}
+
+.login__check-group{
+    column-gap: .5rem;
+}
+.login__check-input{
+    width: 16px;
+    height: 16px;
+}
+
+.login__forgot{
+    color: azure;
+}
+
+.login__forgot:hover{
+    text-decoration: underline;
+}
+
+.login__button{
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: azure;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+}
+
+.login__register{
+    text-align: center;
+}
+.login__register a{
+    color: beige;
+    font-weight: 500;
+}
+
+.login__register a:hover{
+    text-decoration: underline;
+}
+
+.login__input:focus + .login__label{
+    top: -12px;
+    font-size: .813rem;
+}
+.login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label{
+    top: -12px;
+    font-size: .813rem;
+
+}
+h1{
+font-size: 50px;
+line-height: 64px;
+color: #222;
+}
+
+h2{
+font-size: 46px;
+line-height: 54px;
+color: #222;
+}
+
+h4{
+font-size: 20px;
+}
+
+h6{
+font-weight: 700;
+font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color:black;
+    margin: 15px 0 20px 0;
+    font-weight: 700;
+    font-size: 15px;
+    
+
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: grey;
+    box-shadow: 0 5px 15px rgba(0,0, 0, 0.06);
+    z-index: 999;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:darkolivegreen;
+    transition: 0.3s ease;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover{
+    color:greenyellow;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+#hero{
+    background-image: url(../image/landing\ page\ background.avif);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: rgb(255, 127, 127);
+}
+#hero li a button{
+    color:navy;
+    background-color:transparent;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 2%;
+}
+
+#page-header{
+    background-image: url(../image/images.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size:50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction:column ;
+    padding: 14px;
+}
+
+
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid whitesmoke;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0, 0, 0.2);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0, 0, 0.6);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding:10px 0  ;
+}
+#product1 .pro .des span{
+    color: gray;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+ padding-top: 7px;
+ color: black;
+ font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243,181, 25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: darkolivegreen;
+}
+#product1 .pro #cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: gainsboro;
+    font-weight: 700;
+    color:darkolivegreen;
+    border: 1px solid wheat;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: olivedrab;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#cart1{
+    overflow-x: auto;
+}
+#cart1 table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart1 table img{
+    width: 70px;
+}
+
+#cart1 table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart1 table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart1 table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart1 table td:nth-child(4),
+#cart1 table td:nth-child(5)
+,#cart1 table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart1 table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+#cart1 table thead{
+    border: 1px solid black;
+    border-left: none;
+    border-right: none ;
+}
+
+#cart1 table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart1 table tbody tr td{
+    padding-top: 15px;
+}
+#cart1 table tbody td{
+    font-size: 13px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+ #coupon{
+    width: 50%;
+    margin-bottom: 30px;
+
+}
+#coupon h3,
+#subtotal h3{
+    padding-bottom: 15px;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid grey;
+}
+#coupon button,
+#subtotal button{
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    
+}
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid grey;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 13px;
+}
+
+p{
+    color:darkcyan;
+}
+
+@media(max-width:799px ){
+  #navbar{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   position: fixed;
+   top: 0;
+   right: -300px;
+   height: 100vh;
+   width: 300px;
+   background-color:  white;
+   box-shadow: 0 40px 60px rgba(0,0, 0, 0.1);
+   padding: 80px 0 0 10px;
+   transition: 0.3s;
+ }
+ #navbar.active{
+    right: 0px;
+ }
+ #navbar li{
+    margin-bottom: 25px;
+ }
+
+ #mobile{
+    display:flex; 
+    align-items: center;
+}
+ #mobile i{
+    color: black;
+    font-size: 24px;
+    padding-left: 20px;
+ }
+
+ #close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: black;
+    font-size: 24px;
+ }
+
+ #bag{
+    display: none;
+
+ }
+ 
+
+}
+@media( max-width: 477px){
+  #header{
+    padding: 10px 30px;
+  }
+  h1{
+    font-size: 38px;
+  }
+  h2{
+    font-size: 32;
+  }
+  #hero{
+    padding:0 20px;
+    background-position: 55%;
+  }
+
+  #cart-add{
+    flex-direction: column;
+  }
+
+  #coupon{
+    width: 100%;
+  }
+  #subtotal{
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 576px){
+    .login{
+        justify-content: center;
+    }
+    .login__form{
+        width: 432px;
+        padding: 4rem 3rem 3.5rem;
+        border-radius: 1.5rem;
+
+    }
+    .login__title{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
